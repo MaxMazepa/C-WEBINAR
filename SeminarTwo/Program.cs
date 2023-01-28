@@ -23,7 +23,7 @@
 // }
 // if (two / 100 < 1)
 // {
-//     System.Console.WriteLine($"Третей цифры нет!");
+//     System.Console.WriteLine($"Третьей цифры нет!");
 // }
 // else
 // {

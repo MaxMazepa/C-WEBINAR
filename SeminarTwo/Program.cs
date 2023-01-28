@@ -13,20 +13,22 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-// Console.Write("Введите число: ");
+// System.Console.Write("ВВедите число: ");
 // int num = Convert.ToInt32(Console.ReadLine());
-// int result = 0;
-// int ind = 0;
-// while (num > 1)
+// int two = num;
+
+// while (num >= 1000)
 // {
-//     result = num/100;
-//     ind++;
+//     num /= 10;
 // }
-// if (ind == 1)
+// if (two / 100 < 1)
 // {
-//     num = num%10;
+//     System.Console.WriteLine($"Третей цифры нет!");
 // }
-// System.Console.WriteLine(ind);
+// else
+// {
+//     System.Console.WriteLine($"Третья цифра --> {num % 10}");
+// }
 
 // Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 // 6 -> да

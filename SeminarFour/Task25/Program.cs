@@ -2,20 +2,31 @@
 // 3, 5 -> 243 (3⁵)
 // 2, 4 -> 16
 
-System.Console.Write("Введите первое число: ");
-int A = Convert.ToInt32(Console.ReadLine());
-System.Console.Write("Введите второе число: ");
-int B = Convert.ToInt32(Console.ReadLine());
-int i = 1;
+int A = new Random().Next(1, 10);
+int B = new Random().Next(1, 10);
+System.Console.WriteLine($"Результат --> {GetCycle(A,B)}");
 
-while (i <= B)
+static int GetCycle(int A, int B)
 {
-   int num = A*A;
-    i++;
-    System.Console.WriteLine(num);
+    System.Console.WriteLine($"Первое число(А) --> {A}");
+    System.Console.WriteLine($"Второе число(В) --> {B}");
+    int result = 1;
+
+    for (int i = 1; i <= B; i++)
+    {
+        result = result * A;
+        // result = Math.Pow(A, B);                  ((но так не сработало  ругается на int))
+    }
+    return result;
 }
 
-// for (int i = 0; i <= B; i++)
+// System.Console.WriteLine($"Первое число(А) --> {A}");
+// int B = new Random().Next(1, 10);
+// System.Console.WriteLine($"Второе число(В) --> {B}");
+// double result = 0;
+                                                              // Вариант решения без метода
+// for (int i = 1; i <= B; i++)
 // {
-  
+//     result = Math.Pow(A, B);
 // }
+// System.Console.WriteLine($"Результат --> {result}");
